@@ -11,7 +11,7 @@ Scheduling, Billing, Payroll, More?
     cd Workflow2.0
     npm start
 
-## Licensed under MIT
+## License
 
 Copyright (c) 2013 John Mann <me@johnmann.org>, Colin Teal <the30yearswar@hotmail.com>
 
