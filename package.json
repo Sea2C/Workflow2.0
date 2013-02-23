@@ -1,0 +1,42 @@
+{
+  "name": "Workflow2.0",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Scheduling, Billing, Payroll, More?",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sea2C/Workflow2.0.git"
+  },
+  "keywords": [
+    "scheduling",
+    "billing",
+    "payroll"
+  ],
+  "dependencies": {
+    "consolidate": "0.8.0",
+    "dustjs-linkedin": "1.2.1",
+    "dustjs-helpers": "1.1.1",
+    "everyauth": "git://github.com/bnoguchi/everyauth.git#express3",
+    "express": "3.1.0",
+    "less-middleware": "0.1.9"
+  },
+  "devDependencies": {
+    "mocha": "1.8.1"
+  },
+  "author": "Sea2C",
+  "contributors": [
+    {
+      "name": "John Mann",
+      "email": "me@johnmann.org"
+    },
+    {
+      "name": "Colin Teal",
+      "email": "the30yearswar@hotmail.com"
+    }
+  ],
+  "license": "MIT"
+}
