@@ -7,6 +7,15 @@
                 <span class="icon-bar"></span>
             </a>
             <a class="brand" href="/">{title}</a>
+				<ul class="nav" role="navigation">
+					<li class="dropdown">
+					<a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Bootstrap<b class="caret"></b></a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+							<li><a target='none' href='http://twitter.github.com/bootstrap/base-css.html'>Base CSS</a></li>
+							<li><a target='none' href='http://twitter.github.com/bootstrap/scaffolding.html'>Scafolding</a></li>
+						</ul>
+					</li>
+				</ul>
         </div>
     </div>
 </div>

@@ -1,6 +1,10 @@
 {>layout/}
 {<content}
-    <div class='hero-unit'>
+	<div class='hero-unit'>
         <h1>Hello, World!</h1>
     </div>
+	<blockquote>
+		<p>This is the future of the web</p>
+		<small>John Mann</small>
+	</blockquote>
 {/content}
