@@ -13,7 +13,7 @@ Scheduling, Billing, Payroll, More?
 
 ## Developers
 
-Development mode will start the application, but when a file matching extension `js`, `dust`, or `less` is updated in the application source directory it will restart the process automatically.
+Development mode will start the application, but when a file matching extension `js`, `dust`, or `less` is updated in the application source directory it will restart the `node` process automatically.
 
     cd Workflow2.0
     npm run-script dev
