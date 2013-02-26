@@ -11,6 +11,13 @@ Scheduling, Billing, Payroll, More?
     cd Workflow2.0
     npm start
 
+## Developers
+
+Development mode will start the application, but when a file matching extension `js`, `dust`, or `less` is updated in the application source directory it will restart the process automatically.
+
+    cd Workflow2.0
+    npm run-script dev
+
 ## License
 
     Copyright (c) 2013 John Mann <me@johnmann.org>, Colin Teal <the30yearswar@hotmail.com>
