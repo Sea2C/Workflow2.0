@@ -1,0 +1,26 @@
+{>layout/}
+{<content}
+    <div id="login" class="span4 offset3">
+    <form class="form-signin">
+	    <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="input-block-level" placeholder="Email address">
+        <input type="password" class="input-block-level" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+	</form>
+		<ul id="social-login-forms">
+		  <li>
+			<form class="connect-button" name="login" method="POST" action="/social/facebook/redirect/">
+			  <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="129bf9ee5166c914941b3f93f8d22b22"></div>
+			  <input type="hidden" name="next" value="/">
+			  <button type="submit" class="aui-button aui-style facebook-button">
+				Facebook
+			  </button>
+			</form>
+			</li>
+			</ul>
+		</div>
+	</div>
+{/content}

@@ -7,7 +7,7 @@
     </head>
     <body>
         {>"shared/header"/}
-        <div class='container'>
+        <div class='row-fluid'>
             {+content}{/content}
             {>"shared/footer"/}
         </div>
