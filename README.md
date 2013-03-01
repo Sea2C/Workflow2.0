@@ -6,6 +6,16 @@ Scheduling, Billing, Payroll, More?
 
     git clone git@github.com:Sea2C/Workflow2.0.git
 
+## SETUP
+
+Create an environment variable called FACEBOOK_SECRET with the application secret.
+
+    export FACEBOOK_SECRET=...
+
+or in Windows
+
+    SETX FACEBOOK_SECRET ...
+
 ## Run
 
     cd Workflow2.0
