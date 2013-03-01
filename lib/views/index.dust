@@ -1,12 +1,14 @@
 {>layout/}
 {<content}
-	<div class='hero-unit span8 offset2'>
+    <div class='hero-unit span8 offset2'>
         <h1>Hello, World!</h1>
-	</div>
-	<div class='span4 offset2'>
-	<blockquote>
-		<p>This is the future of the web</p>
-		<small>John Mann</small>
-	</blockquote>
+    </div>
+    <div class='row-fluid'>
+        <div class='span4 offset2'>
+            <blockquote>
+                <p>This is the future of the web</p>
+                <small>John Mann</small>
+            </blockquote>
+        </div>
     </div>
 {/content}
