@@ -32,12 +32,12 @@ Development mode will start the application, but when a file matching extension 
 
 ## Tests
 
-Run the unit tests locally.
+Running the unit tests locally is a breeze.
     
     cd Workflow2.0
     npm test
 
-Run the unit tests locally with code coverage enabled. A special report is generated in Hypertext Markup Language (HTML) called `coverage.html` that is viewable in a web browser.
+Collecting code coverage metrics is just as simple. To access the results open `coverage.html` in a web browser.
     
     cd Workflow2.0
     npm run-script coverage
