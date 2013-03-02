@@ -8,12 +8,14 @@ Scheduling, Billing, Payroll, More?
 
 ## Setup
 
-Create an environment variable called FACEBOOK_SECRET with the application secret.
+Create two environment variables called FACEBOOK_ID and FACEBOOK_SECRET with the corresponding application specific values provided by Facebook.
 
+    export FACEBOOK_ID=...
     export FACEBOOK_SECRET=...
 
 or in Windows
-
+    
+    SETX FACEBOOK_ID ...
     SETX FACEBOOK_SECRET ...
 
 ## Run
