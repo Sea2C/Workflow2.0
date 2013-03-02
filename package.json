@@ -5,8 +5,9 @@
   "description": "Scheduling, Billing, Payroll, More?",
   "main": "./lib/index.js",
   "scripts": {
+    "coverage": "jscover lib lib-cov && mocha --recursive --reporter html-cov > coverage.html",
     "dev": "supervisor -e 'js,dust,less,node' server.js",
-    "test": "mocha --reporter spec"
+    "test": "mocha --recursive --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
     "less-middleware": "0.1.9"
   },
   "devDependencies": {
+    "jscover": "0.2.4",
     "mocha": "1.8.1",
+    "sinon": "1.6.0",
     "supervisor": "0.5.2"
   },
   "author": "Sea2C",
