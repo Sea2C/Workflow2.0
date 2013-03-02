@@ -8,7 +8,7 @@ Scheduling, Billing, Payroll, More?
 
 ## Setup
 
-Create two environment variables called FACEBOOK_ID and FACEBOOK_SECRET with the corresponding application specific values provided by Facebook.
+Create two environment variables called `FACEBOOK_ID` and `FACEBOOK_SECRET` with the corresponding application specific values provided by Facebook.
 
     export FACEBOOK_ID=...
     export FACEBOOK_SECRET=...
