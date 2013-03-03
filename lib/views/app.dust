@@ -1,0 +1,11 @@
+{>layout/}
+{<content}
+    <div id='content' class='row-fluid'></div>
+{/content}
+{<scripts}
+    <script src='/scripts/lodash/1.0.1/lodash.min.js'></script>
+    <script src='/scripts/backbone/0.9.10/backbone.min.js'></script>
+    <script src='/scripts/dust/1.2.0/dust.full.js'></script>
+    <script src='/scripts/moment/2.0.0/moment.min.js'></script>
+    <script src='/scripts/workflow/app.js'></script>
+{/scripts}

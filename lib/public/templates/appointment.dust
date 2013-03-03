@@ -1,0 +1,16 @@
+<form>
+    <fieldset>
+        <legend>Appointment</legend>
+        <label>Title:</label>
+        <input id='title' type='text' placeholder='Title' value='{title}'>
+        <label>Date:</label>
+        <input id='date' type='date' class='input-small' value='{date}'>
+        <label>Time:</label>
+        <input id='time' type='time' class='input-small' value='{time}'>
+        <label>Description:</label>
+        <textarea id='description' rows='3'>{description}</textarea>
+        <div class='form-actions'>
+            <button type='button' class='btn btn-primary submit'>Save</button>
+        </div>
+    </fieldset>
+</form>

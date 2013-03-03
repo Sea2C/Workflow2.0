@@ -96,7 +96,7 @@ describe('/appointments', function () {
         });
     });
 
-    describe('#get', function () {
+    describe('#read', function () {
         it('should call repository with id when in the request', function () {
             var request = {
                     id: Date.now(),
@@ -111,7 +111,7 @@ describe('/appointments', function () {
                 },
                 spy = sinon.spy(repository, 'findById');
 
-            appointments.get(request, null, repository);
+            appointments.read(request, null, repository);
 
             assert(spy.calledWith(request.id));
         });
@@ -136,7 +136,7 @@ describe('/appointments', function () {
                 },
                 spy = sinon.spy(response, 'json');
 
-            appointments.get(request, response, repository);
+            appointments.read(request, response, repository);
 
             assert(spy.calledWith(statuscode, error));
         });
@@ -160,7 +160,7 @@ describe('/appointments', function () {
                 },
                 spy = sinon.spy(response, 'json');
 
-            appointments.get(request, response, repository);
+            appointments.read(request, response, repository);
 
             assert(spy.calledWith(statuscode));
         });
@@ -185,7 +185,7 @@ describe('/appointments', function () {
                 },
                 spy = sinon.spy(response, 'json');
 
-            appointments.get(request, response, repository);
+            appointments.read(request, response, repository);
 
             assert(spy.calledWith(statuscode, appointment));
         });
@@ -240,6 +240,114 @@ describe('/appointments', function () {
                 spy = sinon.spy(response, 'json');
 
             appointments.create(request, response, repository);
+
+            assert(spy.calledWith(statuscode, appointment));
+        });
+    });
+
+    describe('#update', function () {
+        it('should return 500 and error when repository find errors', function () {
+            var statuscode = 500,
+                error = { msg: 'error' },
+                request = {
+                    param: function () {
+
+                    }
+                },
+                response = {
+                    json: function () {
+
+                    }
+                },
+                repository = {
+                    findById: function (id, callback) {
+                        return callback(error);
+                    }
+                },
+                spy = sinon.spy(response, 'json');
+
+            appointments.update(request, response, repository);
+
+            assert(spy.calledWith(statuscode, error));
+        });
+
+        it('should return 404 when repository find returns falsy', function () {
+            var statuscode = 404,
+                request = {
+                    param: function () {
+
+                    }
+                },
+                response = {
+                    json: function () {
+
+                    }
+                },
+                repository = {
+                    findById: function (id, callback) {
+                        return callback(null, null);
+                    }
+                },
+                spy = sinon.spy(response, 'json');
+
+            appointments.update(request, response, repository);
+
+            assert(spy.calledWith(statuscode));
+        });
+
+        it('should return 500 and error when repository update errors', function () {
+            var statuscode = 500,
+                appointment = { id: 1 },
+                error = { msg: 'error' },
+                request = {
+                    param: function () {
+
+                    }
+                },
+                response = {
+                    json: function () {
+
+                    }
+                },
+                repository = {
+                    findById: function (id, callback) {
+                        return callback(null, appointment);
+                    },
+                    update: function (appointment, callback) {
+                        return callback(error);
+                    }
+                },
+                spy = sinon.spy(response, 'json');
+
+            appointments.update(request, response, repository);
+
+            assert(spy.calledWith(statuscode, error));
+        });
+
+        it('should return 200 and appointment when repository update succeeds', function () {
+            var statuscode = 200,
+                appointment = { id: 1 },
+                request = {
+                    param: function () {
+
+                    }
+                },
+                response = {
+                    json: function () {
+
+                    }
+                },
+                repository = {
+                    findById: function (id, callback) {
+                        return callback(null, appointment);
+                    },
+                    update: function (appointment, callback) {
+                        return callback(null, appointment);
+                    }
+                },
+                spy = sinon.spy(response, 'json');
+
+            appointments.update(request, response, repository);
 
             assert(spy.calledWith(statuscode, appointment));
         });
