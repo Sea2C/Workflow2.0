@@ -37,4 +37,21 @@ describe('/', function () {
             assert(spy.calledWith(view));
         });
     });
+
+    describe('#app', function () {
+         it('should render app view', function () {
+            var view = 'app',
+                request = { },
+                response = {
+                    render: function () {
+
+                    }
+                },
+                spy = sinon.spy(response, 'render');
+
+            routes.app(request, response);
+
+            assert(spy.calledWith(view));
+        });
+    });
 });
