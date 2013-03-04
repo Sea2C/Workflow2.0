@@ -9,7 +9,7 @@
 		</thead>
 		<tbody>
 		{#appointments}
-			<tr class='rowData' data-row='{id}'><td>{title}</td><td>{description}</td><td>{date}</td><td><input type='button' class='btn delete' value='delete' /></td></tr>
+			<tr class='rowData' data-row='{id}'><td>{title}</td><td>{description}</td><td>{date}</td><td><input type='button' class='btn btn-small delete' value='delete' /></td></tr>
 		{/appointments}
 		</tbody>
 	</table>
