@@ -1,0 +1,17 @@
+<div class="span4 offset2">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Date of Appointment</th>
+			</tr>
+		</thead>
+		<tbody>
+		{#appointments}
+			<tr class='rowData' data-row='{id}'><td>{title}</td><td>{description}</td><td>{date}</td><td><input type='button' class='btn delete' value='delete' /></td></tr>
+		{/appointments}
+		</tbody>
+	</table>
+	<a href='#/appointments/create'>Create</a>
+</div>
