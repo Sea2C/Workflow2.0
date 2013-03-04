@@ -1,4 +1,7 @@
-<div class='span4 offset2'>
+<div class='span12'>
+    <div class='page-header'>
+        <h1>Appointments</h1>
+    </div>
     <table class='table table-hover'>
         <thead>
             <tr>

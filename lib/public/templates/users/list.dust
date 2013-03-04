@@ -1,0 +1,25 @@
+<div class='span12'>
+    <div class='page-header'>
+        <h1>Users</h1>
+    </div>
+    <table class='table table-hover'>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            {#users}
+            <tr class='user-list-row' data-row='{id}'>
+                <td>{name}</td>
+                <td>{role}</td>
+            </tr>
+            {:else}
+            <tr>
+                <td colspan='3'>There are no users.</td>
+            </tr>
+            {/users}
+        </tbody>
+    </table>
+</div>
