@@ -14,6 +14,9 @@
             <tr class='user-list-row' data-row='{id}'>
                 <td>{name}</td>
                 <td>{role}</td>
+                <td>
+                    <button class='btn btn-small'>Edit</button>
+                </td>
             </tr>
             {:else}
             <tr>
