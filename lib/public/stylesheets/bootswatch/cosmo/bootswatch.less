@@ -33,14 +33,14 @@ blockquote {
 	padding: 10px 15px;
 	background-color: @grayLighter;
 	border-left-color: @gray;
-
+    color: white;
 	&.pull-right {
 		padding: 10px 15px;
 		border-right-color: @gray;
 	}
 
 	small {
-		color: @gray;
+		color: @orange;
 	}
 }
 
@@ -77,7 +77,8 @@ a.text-success:hover { color: darken(@green, 10%); }
 	.brand {
 
 		&:hover {
-			color: @navbarLinkColorHover;
+			color: white;
+		    background-color: @navbarLinkBackgroundHover;
 		}
 	}
 
@@ -91,8 +92,7 @@ a.text-success:hover { color: darken(@green, 10%); }
 	.nav li.dropdown.open > .dropdown-toggle,
 	.nav li.dropdown.active > .dropdown-toggle,
 	.nav li.dropdown.open.active > .dropdown-toggle {
-		color: @white;
-
+		color: white;
 		&:hover {
 			color: @grayLighter;
 		}
@@ -223,10 +223,10 @@ div.subnav {
 .nav-list {
 
 	& > li > a {
-		color: @grayDarker;
+		color: @gray;
 
 		&:hover {
-			background-color: @blue;
+			background-color: @orange;
 			color: @white;
 			text-shadow: none;
 		}
@@ -453,7 +453,6 @@ input[type="search"], input[type="tel"], input[type="color"] {
 
 legend {
 	border-bottom: none;
-	color: @grayDarker;
 }
 
 .form-actions {
@@ -532,8 +531,9 @@ legend {
 
 .hero-unit {
 	border: none;
-	.border-radius(0);
+	.border-radius(10);
 	.box-shadow(none);
+    color: white;
 }
 
 .well {
