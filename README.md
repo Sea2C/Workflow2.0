@@ -18,6 +18,8 @@ or in Windows
     SETX FACEBOOK_ID ...
     SETX FACEBOOK_SECRET ...
 
+Install the [client side](https://github.com/Sea2C/Workflow2.0-Client/) source, and follow [the directions](https://github.com/Sea2C/Workflow2.0-Client/blob/master/README.md) to build it. Create a symlink to the client side project's `build` folder at the project path `lib\public\scripts\workflow`, or manually copy `Workflow2.0-Client.min.js` into it.
+
 ## Run
 
     cd Workflow2.0
