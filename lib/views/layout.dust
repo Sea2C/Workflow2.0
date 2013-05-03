@@ -4,6 +4,7 @@
         <meta charset='utf-8' />
         <title>{title}</title>
         <link rel='stylesheet' href='/stylesheets/style.css' />
+        <link rel="stylesheet" href="/scripts/jqueryui/css/ui-lightness/jquery-ui-1.10.2.custom.css" />
     </head>
     <body>
         {>"shared/header"/}
@@ -13,6 +14,7 @@
         </div>
         <script src='/scripts/jquery/1.9.1/jquery.min.js'></script>
         <script src='/scripts/bootstrap/2.3.1/bootstrap.min.js'></script>
+        <script src="/scripts/jqueryui/js/jquery-ui-1.10.2.custom.min.js"></script>
         {+scripts}{/scripts}
     </body>
 </html>
