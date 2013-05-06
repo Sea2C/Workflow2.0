@@ -7,7 +7,7 @@
         <h3>BackLog</h3>
         {#tasks}
         <div class='task-list-row taskItem'>
-            <i class='icon-tag dragItem'></i><i class='icon-pencil edit' data-row='{id}'></i><i class='icon-trash delete'></i>
+            <i class='icon-tag dragItem'></i><i class='icon-pencil edit' data-row='{_id}'></i><i class='icon-trash delete'></i>
             <span class='taskTitle'>{title}</span>
             <span class='taskOwner'>{owner}</span>
             <span class='taskDescr'>{description}</span>

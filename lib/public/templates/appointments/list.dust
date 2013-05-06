@@ -12,7 +12,7 @@
         </thead>
         <tbody>
             {#appointments}
-            <tr class='appointment-list-row' data-row='{id}'>
+            <tr class='appointment-list-row' data-row='{_id}'>
                 <td>{title}</td>
                 <td>{description}</td>
                 <td>{date}</td>
