@@ -1,7 +1,6 @@
 var cpus,
     workers,
     listening,
-    http = require('http'),
     app = require('./lib'),
     port = app.get('port'),
     cluster = require('cluster');
@@ -29,5 +28,5 @@ if (cluster.isMaster) {
     });
 } else {
     // start the server
-    http.createServer(app).listen(port);
+    require('http').createServer(app).listen(port);
 }
