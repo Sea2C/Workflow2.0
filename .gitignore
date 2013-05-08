@@ -16,3 +16,4 @@ npm-debug.log
 coverage.html
 lib/public/stylesheets/*.css
 lib/public/workflow
+.vagrant
