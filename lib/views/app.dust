@@ -26,10 +26,10 @@
     </div>
 {/content}
 {<scripts}
-    <script src='/scripts/lodash/1.0.1/lodash.min.js'></script>
-    <script src='/scripts/backbone/0.9.10/backbone.min.js'></script>
+    <script src='/scripts/lodash/1.2.1/lodash.min.js'></script>
+    <script src='/scripts/backbone/1.0.0/backbone.min.js'></script>
     <script src='/scripts/dust/1.2.0/dust.full.min.js'></script>
     <script src='/scripts/moment/2.0.0/moment.min.js'></script>
     <script src='/scripts/requirejs/2.1.5/requirejs.min.js'></script>
-    <script src='/scripts/workflow/app.js'></script>
+    <script src='/scripts/workflow2.0/build/Workflow2.0-Client.js'></script>
 {/scripts}
